@@ -42,7 +42,6 @@ test.describe('Philosophy Coffee - Formulário de Contato', () => {
   });
 
   test('CT003 - Uso do ZeroStep AI', async ({ page }) => {
-    if (!process.env.ZEROSTEP_TOKEN) test.skip();
 
     const nome = faker.person.fullName();
     const email = faker.internet.email();
